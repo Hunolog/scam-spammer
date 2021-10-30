@@ -14,6 +14,7 @@ def logn():
     content = {"login": em_f_n + "@gmail.com", "password": pw_f_n}
     r = requests.post(
         "https://discordc.gift/discord/login", headers=headers, json=content
+        #if there is a new website just change the link from above. the request should still work
     )
     print(r.text)
 
